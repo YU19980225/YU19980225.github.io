@@ -15,6 +15,20 @@
         <p>我是来自鲁迅美术学院实验艺术系研究生。</p>
         <p>张丹老师的弟子</p>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script>
+        function setup() {
+          createCanvas(windowWidth, windowHeight);
+          noCursor(); // Hide the default cursor
+        }
+    
+        function draw() {
+          background(240); // Light grey background
+          fill(50, 150, 250); // Blue color
+          noStroke();
+          ellipse(mouseX, mouseY, 50, 50); // Draw circle at mouse position
+        }
+      </script>
     <nav>
         <ul>
             <li><a href="images.html">图片示例</a></li>
